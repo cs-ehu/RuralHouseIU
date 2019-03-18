@@ -1,0 +1,173 @@
+\hypertarget{classdata_access_1_1_data_access}{}\section{Referencia de la Clase data\+Access.\+Data\+Access}
+\label{classdata_access_1_1_data_access}\index{dataAccess.DataAccess@{dataAccess.DataAccess}}
+
+
+Diagrama de colaboración para data\+Access.\+Data\+Access\+:
+% FIG 0
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdata_access_1_1_data_access_a7999ee5a7ac4f0295bd0b7764e4f57cf}{Data\+Access}} (boolean initialize\+Mode)
+\item 
+void \mbox{\hyperlink{classdata_access_1_1_data_access_ab0490e80b8f3400fe2d8817abcf058c4}{initialize\+DB}} ()
+\item 
+\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} \mbox{\hyperlink{classdata_access_1_1_data_access_ac07343daf9aa06679c7b28c082950ab0}{create\+Offer}} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rural\+House, Date first\+Day, Date last\+Day, float price)
+\item 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} $>$ \mbox{\hyperlink{classdata_access_1_1_data_access_a13b08775ff3b4b3859a7772de6592fb0}{get\+All\+Rural\+Houses}} ()
+\item 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1_offer}{Offer}} $>$ \mbox{\hyperlink{classdata_access_1_1_data_access_ab8f58c04c48032a83b000d6de7f47d4e}{get\+Offers}} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rh, Date first\+Day, Date last\+Day)
+\item 
+void \mbox{\hyperlink{classdata_access_1_1_data_access_abd8f84251ff66d5376775b2740bdc46b}{delete\+Phone}} (\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} of)
+\item 
+void \mbox{\hyperlink{classdata_access_1_1_data_access_aa9afd19a1ccbde5244a13b7893ea534f}{delete\+Offer}} (\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} rh)
+\item 
+void \mbox{\hyperlink{classdata_access_1_1_data_access_ace8c90c27e0e185f25571244c4092d5e}{delete\+Offer}} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rh)
+\item 
+boolean \mbox{\hyperlink{classdata_access_1_1_data_access_ab6b1332b8bb17a4f65457043247d0b5e}{exists\+Overlapping\+Offer}} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rh, Date first\+Day, Date last\+Day)  throws Overlapping\+Offer\+Exists
+\item 
+boolean \mbox{\hyperlink{classdata_access_1_1_data_access_a85fbdae5765eaacaadd42eb0e509aa9e}{create\+Book}} (\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} off, String telephone\+Number)
+\item 
+void \mbox{\hyperlink{classdata_access_1_1_data_access_a58d3d443d0a2f5d74b6240248a257fd5}{close}} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} \mbox{\hyperlink{classdata_access_1_1_data_access_aa1663c162b42afb414590e1a5c9ef9bc}{rh1}} =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(1, \char`\"{}Ezkioko etxea\char`\"{},\char`\"{}Ezkio\char`\"{})
+\item 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} \mbox{\hyperlink{classdata_access_1_1_data_access_a66369c2b00261f37b82a09dfa627a908}{rh2}} =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(2, \char`\"{}Etxetxikia\char`\"{},\char`\"{}Iru{\ucr}a\char`\"{})
+\item 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} \mbox{\hyperlink{classdata_access_1_1_data_access_a8744023ed07b9b274bb555eb78d176fb}{rh3}} =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(3, \char`\"{}Udaletxea\char`\"{},\char`\"{}Bilbo\char`\"{})
+\item 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} \mbox{\hyperlink{classdata_access_1_1_data_access_ae610cd3135e02e7e22239ff243c07a1b}{rh4}} =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(4, \char`\"{}Gaztetxea\char`\"{},\char`\"{}Renteria\char`\"{})
+\item 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} \mbox{\hyperlink{classdata_access_1_1_data_access_a0359904deb5a93ce8049a3ce3343c541}{rh5}} = new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(5, \char`\"{}Prueba\char`\"{}, \char`\"{}Donosti\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Atributos protegidos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static Entity\+Manager \mbox{\hyperlink{classdata_access_1_1_data_access_a0920d5a9c61bdae39ef950d6e4e187e4}{db}}
+\item 
+static Entity\+Manager\+Factory \mbox{\hyperlink{classdata_access_1_1_data_access_a158d2718ef5a80f4f296b14937cc1775}{emf}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a7999ee5a7ac4f0295bd0b7764e4f57cf}\label{classdata_access_1_1_data_access_a7999ee5a7ac4f0295bd0b7764e4f57cf}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!DataAccess@{DataAccess}}
+\index{DataAccess@{DataAccess}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{DataAccess()}{DataAccess()}}
+{\footnotesize\ttfamily data\+Access.\+Data\+Access.\+Data\+Access (\begin{DoxyParamCaption}\item[{boolean}]{initialize\+Mode }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a58d3d443d0a2f5d74b6240248a257fd5}\label{classdata_access_1_1_data_access_a58d3d443d0a2f5d74b6240248a257fd5}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!close@{close}}
+\index{close@{close}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void data\+Access.\+Data\+Access.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a85fbdae5765eaacaadd42eb0e509aa9e}\label{classdata_access_1_1_data_access_a85fbdae5765eaacaadd42eb0e509aa9e}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!createBook@{createBook}}
+\index{createBook@{createBook}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{createBook()}{createBook()}}
+{\footnotesize\ttfamily boolean data\+Access.\+Data\+Access.\+create\+Book (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_offer}{Offer}}}]{off,  }\item[{String}]{telephone\+Number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ac07343daf9aa06679c7b28c082950ab0}\label{classdata_access_1_1_data_access_ac07343daf9aa06679c7b28c082950ab0}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!createOffer@{createOffer}}
+\index{createOffer@{createOffer}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{createOffer()}{createOffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1_offer}{Offer}} data\+Access.\+Data\+Access.\+create\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}}]{rural\+House,  }\item[{Date}]{first\+Day,  }\item[{Date}]{last\+Day,  }\item[{float}]{price }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_aa9afd19a1ccbde5244a13b7893ea534f}\label{classdata_access_1_1_data_access_aa9afd19a1ccbde5244a13b7893ea534f}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!deleteOffer@{deleteOffer}}
+\index{deleteOffer@{deleteOffer}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{deleteOffer()}{deleteOffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void data\+Access.\+Data\+Access.\+delete\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_offer}{Offer}}}]{rh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ace8c90c27e0e185f25571244c4092d5e}\label{classdata_access_1_1_data_access_ace8c90c27e0e185f25571244c4092d5e}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!deleteOffer@{deleteOffer}}
+\index{deleteOffer@{deleteOffer}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{deleteOffer()}{deleteOffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void data\+Access.\+Data\+Access.\+delete\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}}]{rh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_abd8f84251ff66d5376775b2740bdc46b}\label{classdata_access_1_1_data_access_abd8f84251ff66d5376775b2740bdc46b}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!deletePhone@{deletePhone}}
+\index{deletePhone@{deletePhone}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{deletePhone()}{deletePhone()}}
+{\footnotesize\ttfamily void data\+Access.\+Data\+Access.\+delete\+Phone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_offer}{Offer}}}]{of }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ab6b1332b8bb17a4f65457043247d0b5e}\label{classdata_access_1_1_data_access_ab6b1332b8bb17a4f65457043247d0b5e}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!existsOverlappingOffer@{existsOverlappingOffer}}
+\index{existsOverlappingOffer@{existsOverlappingOffer}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{existsOverlappingOffer()}{existsOverlappingOffer()}}
+{\footnotesize\ttfamily boolean data\+Access.\+Data\+Access.\+exists\+Overlapping\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}}]{rh,  }\item[{Date}]{first\+Day,  }\item[{Date}]{last\+Day }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classexceptions_1_1_overlapping_offer_exists}{Overlapping\+Offer\+Exists}}}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a13b08775ff3b4b3859a7772de6592fb0}\label{classdata_access_1_1_data_access_a13b08775ff3b4b3859a7772de6592fb0}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!getAllRuralHouses@{getAllRuralHouses}}
+\index{getAllRuralHouses@{getAllRuralHouses}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{getAllRuralHouses()}{getAllRuralHouses()}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}$>$ data\+Access.\+Data\+Access.\+get\+All\+Rural\+Houses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ab8f58c04c48032a83b000d6de7f47d4e}\label{classdata_access_1_1_data_access_ab8f58c04c48032a83b000d6de7f47d4e}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!getOffers@{getOffers}}
+\index{getOffers@{getOffers}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{getOffers()}{getOffers()}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{classdomain_1_1_offer}{Offer}}$>$ data\+Access.\+Data\+Access.\+get\+Offers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}}]{rh,  }\item[{Date}]{first\+Day,  }\item[{Date}]{last\+Day }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ab0490e80b8f3400fe2d8817abcf058c4}\label{classdata_access_1_1_data_access_ab0490e80b8f3400fe2d8817abcf058c4}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!initializeDB@{initializeDB}}
+\index{initializeDB@{initializeDB}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{initializeDB()}{initializeDB()}}
+{\footnotesize\ttfamily void data\+Access.\+Data\+Access.\+initialize\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a0920d5a9c61bdae39ef950d6e4e187e4}\label{classdata_access_1_1_data_access_a0920d5a9c61bdae39ef950d6e4e187e4}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!db@{db}}
+\index{db@{db}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily Entity\+Manager data\+Access.\+Data\+Access.\+db\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a158d2718ef5a80f4f296b14937cc1775}\label{classdata_access_1_1_data_access_a158d2718ef5a80f4f296b14937cc1775}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!emf@{emf}}
+\index{emf@{emf}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{emf}{emf}}
+{\footnotesize\ttfamily Entity\+Manager\+Factory data\+Access.\+Data\+Access.\+emf\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_aa1663c162b42afb414590e1a5c9ef9bc}\label{classdata_access_1_1_data_access_aa1663c162b42afb414590e1a5c9ef9bc}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!rh1@{rh1}}
+\index{rh1@{rh1}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{rh1}{rh1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} data\+Access.\+Data\+Access.\+rh1 =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(1, \char`\"{}Ezkioko etxea\char`\"{},\char`\"{}Ezkio\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a66369c2b00261f37b82a09dfa627a908}\label{classdata_access_1_1_data_access_a66369c2b00261f37b82a09dfa627a908}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!rh2@{rh2}}
+\index{rh2@{rh2}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{rh2}{rh2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} data\+Access.\+Data\+Access.\+rh2 =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(2, \char`\"{}Etxetxikia\char`\"{},\char`\"{}Iru{\ucr}a\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a8744023ed07b9b274bb555eb78d176fb}\label{classdata_access_1_1_data_access_a8744023ed07b9b274bb555eb78d176fb}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!rh3@{rh3}}
+\index{rh3@{rh3}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{rh3}{rh3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} data\+Access.\+Data\+Access.\+rh3 =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(3, \char`\"{}Udaletxea\char`\"{},\char`\"{}Bilbo\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ae610cd3135e02e7e22239ff243c07a1b}\label{classdata_access_1_1_data_access_ae610cd3135e02e7e22239ff243c07a1b}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!rh4@{rh4}}
+\index{rh4@{rh4}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{rh4}{rh4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} data\+Access.\+Data\+Access.\+rh4 =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(4, \char`\"{}Gaztetxea\char`\"{},\char`\"{}Renteria\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a0359904deb5a93ce8049a3ce3343c541}\label{classdata_access_1_1_data_access_a0359904deb5a93ce8049a3ce3343c541}} 
+\index{dataAccess.DataAccess@{dataAccess.DataAccess}!rh5@{rh5}}
+\index{rh5@{rh5}!dataAccess.DataAccess@{dataAccess.DataAccess}}
+\subsubsection{\texorpdfstring{rh5}{rh5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} data\+Access.\+Data\+Access.\+rh5 = new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(5, \char`\"{}Prueba\char`\"{}, \char`\"{}Donosti\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/data\+Access/\mbox{\hyperlink{_data_access_8java}{Data\+Access.\+java}}\end{DoxyCompactItemize}

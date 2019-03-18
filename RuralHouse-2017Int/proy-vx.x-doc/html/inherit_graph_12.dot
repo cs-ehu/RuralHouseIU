@@ -1,0 +1,16 @@
+digraph "Representación gráfica de la clase"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7 [label="JFrame",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="gui.BookRuralHouseGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgui_1_1_book_rural_house_g_u_i.html",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="gui.MainGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgui_1_1_main_g_u_i.html",tooltip=" "];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="gui.QueryAvailabilityGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgui_1_1_query_availability_g_u_i.html",tooltip=" "];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="gui.SetAvailabilityGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgui_1_1_set_availability_g_u_i.html",tooltip=" "];
+}

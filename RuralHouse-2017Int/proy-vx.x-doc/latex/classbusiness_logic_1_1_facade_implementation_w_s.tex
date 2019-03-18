@@ -1,0 +1,180 @@
+\hypertarget{classbusiness_logic_1_1_facade_implementation_w_s}{}\section{Referencia de la Clase business\+Logic.\+Facade\+Implementation\+WS}
+\label{classbusiness_logic_1_1_facade_implementation_w_s}\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+
+
+Diagrama de herencias de business\+Logic.\+Facade\+Implementation\+WS
+% FIG 0
+
+
+Diagrama de colaboración para business\+Logic.\+Facade\+Implementation\+WS\+:
+% FIG 1
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_a22415eec1f4d0a160f02cfdc1ac80825}{Facade\+Implementation\+WS}} ()
+\item 
+\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_ac7b3bdfd0815ea7c787da312de594cce}{create\+Offer}} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rural\+House, Date first\+Day, Date last\+Day, float price)  throws Overlapping\+Offer\+Exists, Bad\+Dates 
+\item 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} $>$ \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_aa6f21ddb40ca6cd752a13e31ff016e7e}{get\+All\+Rural\+Houses}} ()
+\item 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1_offer}{Offer}} $>$ \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_a7489fb15fdb8206b16daf6ed24fdfea0}{get\+Offers}} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rh, Date first\+Day, Date last\+Day)
+\item 
+void \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_ab3efd0077bc3ffd21e78cf2fb9f8709c}{delete\+Phone}} (\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} of)
+\item 
+void \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_a7d5bca5ebc3d420813ce40e0b47cfef9}{delete\+Offer}} (\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} rh)
+\item 
+void \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_a109173565a7d95250d9136e9540c13b9}{delete\+Offer}} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rh)
+\item 
+boolean \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_a89aa08f9fe033c295d7fcf0cb5571882}{create\+Book}} (\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} off, String telephone\+Number)
+\item 
+boolean \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_abde3726431e6d9708422689a30c9bbd6}{is\+Numeric}} (String str)
+\item 
+void \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_aaf150e07dd6d71319c6f2f4bf6be1647}{close}} ()
+\item 
+void \mbox{\hyperlink{classbusiness_logic_1_1_facade_implementation_w_s_a94a4600e9c80794676f06c888e9e682d}{initialize\+BD}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_a22415eec1f4d0a160f02cfdc1ac80825}\label{classbusiness_logic_1_1_facade_implementation_w_s_a22415eec1f4d0a160f02cfdc1ac80825}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!FacadeImplementationWS@{FacadeImplementationWS}}
+\index{FacadeImplementationWS@{FacadeImplementationWS}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{FacadeImplementationWS()}{FacadeImplementationWS()}}
+{\footnotesize\ttfamily business\+Logic.\+Facade\+Implementation\+W\+S.\+Facade\+Implementation\+WS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_aaf150e07dd6d71319c6f2f4bf6be1647}\label{classbusiness_logic_1_1_facade_implementation_w_s_aaf150e07dd6d71319c6f2f4bf6be1647}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!close@{close}}
+\index{close@{close}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void business\+Logic.\+Facade\+Implementation\+W\+S.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_a89aa08f9fe033c295d7fcf0cb5571882}\label{classbusiness_logic_1_1_facade_implementation_w_s_a89aa08f9fe033c295d7fcf0cb5571882}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!createBook@{createBook}}
+\index{createBook@{createBook}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{createBook()}{createBook()}}
+{\footnotesize\ttfamily boolean business\+Logic.\+Facade\+Implementation\+W\+S.\+create\+Book (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_offer}{Offer}}}]{off,  }\item[{String}]{telephone\+Number }\end{DoxyParamCaption})}
+
+This method creates a book for a client telephone\+Number
+
+
+\begin{DoxyParams}{Parámetros}
+{\em offer,the} & the offer to be booked \\
+\hline
+{\em telephone\+Number,the} & telephone of the person who book the offer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true if the offer has been booked, false in other case 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interfacebusiness_logic_1_1_application_facade_interface_w_s_a1fd4f6fccc600ed8127e06fa34a10512}{business\+Logic.\+Application\+Facade\+Interface\+WS}}.
+
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_ac7b3bdfd0815ea7c787da312de594cce}\label{classbusiness_logic_1_1_facade_implementation_w_s_ac7b3bdfd0815ea7c787da312de594cce}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!createOffer@{createOffer}}
+\index{createOffer@{createOffer}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{createOffer()}{createOffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1_offer}{Offer}} business\+Logic.\+Facade\+Implementation\+W\+S.\+create\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}}]{rural\+House,  }\item[{Date}]{first\+Day,  }\item[{Date}]{last\+Day,  }\item[{float}]{price }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classexceptions_1_1_overlapping_offer_exists}{Overlapping\+Offer\+Exists}}, \mbox{\hyperlink{classexceptions_1_1_bad_dates}{Bad\+Dates}}}
+
+This method creates an offer with a house number, first day, last day and price
+
+
+\begin{DoxyParams}{Parámetros}
+{\em House} & number, start day, last day and price \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+the created offer, or null, or an exception 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interfacebusiness_logic_1_1_application_facade_interface_w_s_a0e8d2135ef1384a32e74f60bcea55f09}{business\+Logic.\+Application\+Facade\+Interface\+WS}}.
+
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_a7d5bca5ebc3d420813ce40e0b47cfef9}\label{classbusiness_logic_1_1_facade_implementation_w_s_a7d5bca5ebc3d420813ce40e0b47cfef9}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!deleteOffer@{deleteOffer}}
+\index{deleteOffer@{deleteOffer}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{deleteOffer()}{deleteOffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void business\+Logic.\+Facade\+Implementation\+W\+S.\+delete\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_offer}{Offer}}}]{rh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_a109173565a7d95250d9136e9540c13b9}\label{classbusiness_logic_1_1_facade_implementation_w_s_a109173565a7d95250d9136e9540c13b9}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!deleteOffer@{deleteOffer}}
+\index{deleteOffer@{deleteOffer}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{deleteOffer()}{deleteOffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void business\+Logic.\+Facade\+Implementation\+W\+S.\+delete\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}}]{rh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_ab3efd0077bc3ffd21e78cf2fb9f8709c}\label{classbusiness_logic_1_1_facade_implementation_w_s_ab3efd0077bc3ffd21e78cf2fb9f8709c}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!deletePhone@{deletePhone}}
+\index{deletePhone@{deletePhone}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{deletePhone()}{deletePhone()}}
+{\footnotesize\ttfamily void business\+Logic.\+Facade\+Implementation\+W\+S.\+delete\+Phone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_offer}{Offer}}}]{of }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_aa6f21ddb40ca6cd752a13e31ff016e7e}\label{classbusiness_logic_1_1_facade_implementation_w_s_aa6f21ddb40ca6cd752a13e31ff016e7e}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!getAllRuralHouses@{getAllRuralHouses}}
+\index{getAllRuralHouses@{getAllRuralHouses}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{getAllRuralHouses()}{getAllRuralHouses()}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}$>$ business\+Logic.\+Facade\+Implementation\+W\+S.\+get\+All\+Rural\+Houses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method creates a book with a corresponding parameters
+
+
+\begin{DoxyParams}{Parámetros}
+{\em First} & day, last day, house number and telephone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+a book\+This method retrieves the existing rural houses
+
+a Set of rural houses 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interfacebusiness_logic_1_1_application_facade_interface_w_s_a553cbfb37ea9f1621ba76ad8308a15da}{business\+Logic.\+Application\+Facade\+Interface\+WS}}.
+
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_a7489fb15fdb8206b16daf6ed24fdfea0}\label{classbusiness_logic_1_1_facade_implementation_w_s_a7489fb15fdb8206b16daf6ed24fdfea0}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!getOffers@{getOffers}}
+\index{getOffers@{getOffers}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{getOffers()}{getOffers()}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{classdomain_1_1_offer}{Offer}}$>$ business\+Logic.\+Facade\+Implementation\+W\+S.\+get\+Offers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}}]{rh,  }\item[{Date}]{first\+Day,  }\item[{Date}]{last\+Day }\end{DoxyParamCaption})}
+
+This method obtains the offers of a rural\+House in the provided dates
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rural\+House,the} & rural\+House to inspect \\
+\hline
+{\em first\+Day,first} & day in a period range \\
+\hline
+{\em last\+Day,last} & day in a period range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+the first offer that overlaps with those dates, or null if there is no overlapping offer 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interfacebusiness_logic_1_1_application_facade_interface_w_s_ae338a96d039003c64fceb68d667736f1}{business\+Logic.\+Application\+Facade\+Interface\+WS}}.
+
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_a94a4600e9c80794676f06c888e9e682d}\label{classbusiness_logic_1_1_facade_implementation_w_s_a94a4600e9c80794676f06c888e9e682d}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!initializeBD@{initializeBD}}
+\index{initializeBD@{initializeBD}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{initializeBD()}{initializeBD()}}
+{\footnotesize\ttfamily void business\+Logic.\+Facade\+Implementation\+W\+S.\+initialize\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusiness_logic_1_1_application_facade_interface_w_s_a59eacfa5890466c6a338d0df2e487965}{business\+Logic.\+Application\+Facade\+Interface\+WS}}.
+
+\mbox{\Hypertarget{classbusiness_logic_1_1_facade_implementation_w_s_abde3726431e6d9708422689a30c9bbd6}\label{classbusiness_logic_1_1_facade_implementation_w_s_abde3726431e6d9708422689a30c9bbd6}} 
+\index{businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}!isNumeric@{isNumeric}}
+\index{isNumeric@{isNumeric}!businessLogic.FacadeImplementationWS@{businessLogic.FacadeImplementationWS}}
+\subsubsection{\texorpdfstring{isNumeric()}{isNumeric()}}
+{\footnotesize\ttfamily boolean business\+Logic.\+Facade\+Implementation\+W\+S.\+is\+Numeric (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})}
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/business\+Logic/\mbox{\hyperlink{_facade_implementation_w_s_8java}{Facade\+Implementation\+W\+S.\+java}}\end{DoxyCompactItemize}
