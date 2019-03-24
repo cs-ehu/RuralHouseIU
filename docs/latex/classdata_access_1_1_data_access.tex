@@ -1,0 +1,80 @@
+\hypertarget{classdata_access_1_1_data_access}{}\section{data\+Access.\+Data\+Access Class Reference}
+\label{classdata_access_1_1_data_access}\index{dataAccess.DataAccess@{dataAccess.DataAccess}}
+
+
+Collaboration diagram for data\+Access.\+Data\+Access\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdata_access_1_1_data_access__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a7999ee5a7ac4f0295bd0b7764e4f57cf}\label{classdata_access_1_1_data_access_a7999ee5a7ac4f0295bd0b7764e4f57cf}} 
+{\bfseries Data\+Access} (boolean initialize\+Mode)
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ab0490e80b8f3400fe2d8817abcf058c4}\label{classdata_access_1_1_data_access_ab0490e80b8f3400fe2d8817abcf058c4}} 
+void {\bfseries initialize\+DB} ()
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ac07343daf9aa06679c7b28c082950ab0}\label{classdata_access_1_1_data_access_ac07343daf9aa06679c7b28c082950ab0}} 
+\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} {\bfseries create\+Offer} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rural\+House, Date first\+Day, Date last\+Day, float price)
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a13b08775ff3b4b3859a7772de6592fb0}\label{classdata_access_1_1_data_access_a13b08775ff3b4b3859a7772de6592fb0}} 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} $>$ {\bfseries get\+All\+Rural\+Houses} ()
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ab8f58c04c48032a83b000d6de7f47d4e}\label{classdata_access_1_1_data_access_ab8f58c04c48032a83b000d6de7f47d4e}} 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1_offer}{Offer}} $>$ {\bfseries get\+Offers} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rh, Date first\+Day, Date last\+Day)
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_abd8f84251ff66d5376775b2740bdc46b}\label{classdata_access_1_1_data_access_abd8f84251ff66d5376775b2740bdc46b}} 
+void {\bfseries delete\+Phone} (\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} of)
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_aa9afd19a1ccbde5244a13b7893ea534f}\label{classdata_access_1_1_data_access_aa9afd19a1ccbde5244a13b7893ea534f}} 
+void {\bfseries delete\+Offer} (\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} rh)
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ace8c90c27e0e185f25571244c4092d5e}\label{classdata_access_1_1_data_access_ace8c90c27e0e185f25571244c4092d5e}} 
+void {\bfseries delete\+Offer} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rh)
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ab6b1332b8bb17a4f65457043247d0b5e}\label{classdata_access_1_1_data_access_ab6b1332b8bb17a4f65457043247d0b5e}} 
+boolean {\bfseries exists\+Overlapping\+Offer} (\mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} rh, Date first\+Day, Date last\+Day)  throws Overlapping\+Offer\+Exists
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a85fbdae5765eaacaadd42eb0e509aa9e}\label{classdata_access_1_1_data_access_a85fbdae5765eaacaadd42eb0e509aa9e}} 
+boolean {\bfseries create\+Book} (\mbox{\hyperlink{classdomain_1_1_offer}{Offer}} off, String telephone\+Number)
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a58d3d443d0a2f5d74b6240248a257fd5}\label{classdata_access_1_1_data_access_a58d3d443d0a2f5d74b6240248a257fd5}} 
+void {\bfseries close} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_aa1663c162b42afb414590e1a5c9ef9bc}\label{classdata_access_1_1_data_access_aa1663c162b42afb414590e1a5c9ef9bc}} 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} {\bfseries rh1} =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(1, \char`\"{}Ezkioko etxea\char`\"{},\char`\"{}Ezkio\char`\"{})
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a66369c2b00261f37b82a09dfa627a908}\label{classdata_access_1_1_data_access_a66369c2b00261f37b82a09dfa627a908}} 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} {\bfseries rh2} =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(2, \char`\"{}Etxetxikia\char`\"{},\char`\"{}Iru{\ucr}a\char`\"{})
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a8744023ed07b9b274bb555eb78d176fb}\label{classdata_access_1_1_data_access_a8744023ed07b9b274bb555eb78d176fb}} 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} {\bfseries rh3} =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(3, \char`\"{}Udaletxea\char`\"{},\char`\"{}Bilbo\char`\"{})
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_ae610cd3135e02e7e22239ff243c07a1b}\label{classdata_access_1_1_data_access_ae610cd3135e02e7e22239ff243c07a1b}} 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} {\bfseries rh4} =new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(4, \char`\"{}Gaztetxea\char`\"{},\char`\"{}Renteria\char`\"{})
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a0359904deb5a93ce8049a3ce3343c541}\label{classdata_access_1_1_data_access_a0359904deb5a93ce8049a3ce3343c541}} 
+static \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}} {\bfseries rh5} = new \mbox{\hyperlink{classdomain_1_1_rural_house}{Rural\+House}}(5, \char`\"{}Prueba\char`\"{}, \char`\"{}Donosti\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a0920d5a9c61bdae39ef950d6e4e187e4}\label{classdata_access_1_1_data_access_a0920d5a9c61bdae39ef950d6e4e187e4}} 
+static Entity\+Manager {\bfseries db}
+\item 
+\mbox{\Hypertarget{classdata_access_1_1_data_access_a158d2718ef5a80f4f296b14937cc1775}\label{classdata_access_1_1_data_access_a158d2718ef5a80f4f296b14937cc1775}} 
+static Entity\+Manager\+Factory {\bfseries emf}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/data\+Access/Data\+Access.\+java\end{DoxyCompactItemize}
