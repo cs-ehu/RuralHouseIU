@@ -4,6 +4,14 @@
   <artifactId>RuralHouse-2017Int</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>RuralHouse-2017Int</name>
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.ysb33r.gradle/doxygen -->
+    <dependency>
+        <groupId>org.ysb33r.gradle</groupId>
+        <artifactId>doxygen</artifactId>
+        <version>0.4</version>
+    </dependency>
+  </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
