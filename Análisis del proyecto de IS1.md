@@ -1,6 +1,14 @@
 # Análisis del proyecto de IS1
 
-[TOC]
+- [Análisis del proyecto de IS1](#an%C3%A1lisis-del-proyecto-de-is1)
+  - [Introducción](#introducci%C3%B3n)
+  - [Lista de tareas pendientes](#lista-de-tareas-pendientes)
+    - [Planificación](#planificaci%C3%B3n)
+    - [Diseño](#dise%C3%B1o)
+    - [Pruebas](#pruebas)
+    - [División de tareas](#divisi%C3%B3n-de-tareas)
+    - [Normas de codificación](#normas-de-codificaci%C3%B3n)
+  - [Conclusiones](#conclusiones)
 
 ## Introducción
 <div style="text-align: justify">
@@ -57,7 +65,7 @@ Una planificación que se podría haber realizado deberia haber seguido el sigui
     3. Entregables
        1. Relacionados con el objeto de proyecto en sí
        2. Relacionados con la Planificación y Gestión del Proyecto
-   4. WBS/EDT
+   1. WBS/EDT
 2. Periodos de realización de las tareas y fechas de terminación de los entregables
 2.1 Descripción tareas a realizar
 2.2 Dependencias entre tareas
@@ -120,40 +128,84 @@ En nuestro proyecto, está división fue casi inexistente. Se dividió el trabaj
 ### Normas de codificación
 La norma de codificación de java según Google consta de los siguientes puntos. Un ✔ al lado del nombre de una norma indica que nuestro proyecto cumple dicha norma, mientras que un ❌ indicará que no.
 
-1. Introduction
-    1. Terminology notes: ✔ 
-    2. Guide notes
-2. Source file basics
-    1. File name
-    2. File encoding: UTF-8
+1. Source file basics
+    1. File name    ✔
+    2. File encoding: UTF-8 ✔
     3. Special characters
-3. Source file structure
-    1. License or copyright information, if present
-    2. Package statement
-    3. Import statements
+       1. Whitespace character ❌
+       2. Special escape sequences ✔
+       3. Non-ASCII characters ✔
+2. Source file structure
+    1. License or copyright information, if present ✔(not present)
+    2. Package statement ✔
+    3. Import statements 
+       1. No wildcard imports ❌
+       2. No line-wrapping ✔
+       3. Ordering and spacing ❌
+       4. No static import for classes ✔
     4. Class declaration
-4. Formatting
-    1. Braces
-    2. Block indentation: +2 spaces
-    3. One statement per line
-    4. Column limit: 100
+       1. Exactly one top-level class declaration ✔
+       2. Ordering of class contents ❌
+3. Formatting
+    1. Braces 
+       1. Braces are used where optional ✔
+       2. Nonempty blocks: K & R style ❌
+       3. Empty blocks: may be concise ✔
+    2. Block indentation: +2 spaces ❌
+    3. One statement per line ✔
+    4. Column limit: 100 ✔
     5. Line-wrapping
+       1. Where to break ✔
+       2. Indent continuation lines at least +4 spaces ✔
     6. Whitespace
-    7. Grouping parentheses: recommended
+       1. Vertical Whitespace ✔
+       2. Horizontal whitespace ✔
+       3. Horizontal alignment: never required ✔
+    7. Grouping parentheses: recommended ❌
     8. Specific constructs
-5. Naming
-    1. Rules common to all identifiers
-    2. Rules by identifier type
-    3. Camel case: defined
-6. Programming Practices
-    1. @Override: always used
-    2. Caught exceptions: not ignored
-    3. Static members: qualified using class
-    4. Finalizers: not used
-7. Javadoc
+       1. Enum classes ✔
+       2. Variable declarations
+          1. One variable per declaration ✔
+          2. Declared when needed ✔
+       3. Arrays
+          1. Array initializers: can be "block-like" ✔
+          2. No C-style array declarations ✔
+       4. Switch statements
+          1. Indentation ✔
+          2. Fall-through: commented ✔
+          3. The default case is present ✔
+       5. Annotations ✔
+       6. Comments
+          1. Block comment style ✔
+       7. Modifiers ❌
+       8. Numeric Literals ✔
+4. Naming
+    1. Rules common to all identifiers ✔
+    2. Rules by identifier type 
+       1. Package names ✔
+       2. Class names ✔
+       3. Method names ✔
+       4. Constant names ✔
+       5. Non-constant field names ✔
+       6. Parameter names ✔
+       7. Local variable names ✔
+       8. Type variable names ❌
+    3. Camel case: defined ❌
+5. Programming Practices
+    1. @Override: always used ✔
+    2. Caught exceptions: not ignored ✔
+    3. Static members: qualified using class ❌
+    4. Finalizers: not used ✔
+6. Javadoc
     1. Formatting
-    2. The summary fragment
+       1. General form ✔
+       2. Paragraphs ✔
+       3. Block tags ✔
+    2. The summary fragment ❌
     3. Where Javadoc is used
+       1. Exception: self-explanatory methods ❌
+       2. Exception: overrides ❌
+       3. Non-required Javadoc ✔
 
 
 ## Conclusiones
