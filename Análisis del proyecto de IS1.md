@@ -41,11 +41,11 @@ Se ha escogido como proyecto para trabajar sobre él el realizado en la asignatu
 
 | Nombre | Estado | Importancia | 
 | -------- | -------- | -------- |
-| Planificación     | Sin empezar     | Text     |
-| Diseño| Realizados en su momento | |
-|Pruebas | Algunas hechas pero faltan | |
-| División de tareas| No hecha | |
-|Normas de codificación |No hecha | |
+| Planificación     | Sin empezar     | Baja     |
+| Diseño| Realizados en su momento | Alta |
+|Pruebas | Algunas hechas pero faltan | Alta |
+| División de tareas| No hecha | Medio |
+|Normas de codificación |No hecha |Baja |
 
 ### Planificación
 
